@@ -141,7 +141,7 @@ app.get("/allHoldings", async (req, res) => {
       price: item.price,
       net: item.net,
       day: item.day,
-    }, "name qty price avg net day isLoss");
+    });
 
     newHolding.save();
   });
